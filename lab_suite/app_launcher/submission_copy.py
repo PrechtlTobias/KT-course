@@ -98,3 +98,30 @@ def ensure_app_submission_files(folder_name: str) -> list[Path]:
         if path is not None:
             result.append(path)
     return result
+
+
+def ensure_sidedata_copy(folder_name: str) -> bool:
+    """
+    Kopiert den Ordner task/sidedata/ nach submissions/sidedata/, falls er im Task existiert.
+    Nur Dateien, die in submissions/sidedata/ noch fehlen, werden kopiert (kein Überschreiben).
+    Wird nur im Studenten-Modus aufgerufen; im Instructor-Modus (.instructor_key) nicht.
+
+    Returns:
+        True, wenn sidedata existierte und ggf. kopiert wurde; False, wenn task/sidedata/ nicht existiert.
+    """
+    task_dir = LABS_DIR / folder_name
+    source_dir = task_dir / "sidedata"
+    if not source_dir.is_dir():
+        return False
+    submissions_dir = task_dir / "submissions"
+    dest_dir = submissions_dir / "sidedata"
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    for src_file in source_dir.rglob("*"):
+        if not src_file.is_file():
+            continue
+        rel = src_file.relative_to(source_dir)
+        dest_file = dest_dir / rel
+        if not dest_file.exists():
+            dest_file.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src_file, dest_file)
+    return True
