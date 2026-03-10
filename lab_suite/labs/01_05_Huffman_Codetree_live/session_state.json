@@ -1,0 +1,8 @@
+{
+  "row_0.widget_1": null,
+  "row_1.widget_2": "",
+  "row_1.widget_5": 1.0,
+  "row_2.widget_3": "ewerwerwerwerwersdfewsdfwersdfwerdsfe",
+  "row_2.widget_4": "Char | Huffman code\n     \n----------------------\\    \n 'e'  |          00  \n 'w'  |          11  \n 'r'  |         010  \n 's'  |         011  \n 'd'  |         100  \n 'f'  |         101",
+  "row_2.widget_6": "[1.01]\n    \u251c\u2500\u2500 [0.44]\n    \u2502   \u251c\u2500\u2500 [0.22]\n    \u2502   \u2502   \u251c\u2500\u2500 's' (0.11)\n    \u2502   \u2502   \u2514\u2500\u2500 'd' (0.11)\n    \u2502   \u2514\u2500\u2500 'w' (0.22)\n    \u2514\u2500\u2500 [0.57]\n        \u251c\u2500\u2500 'e' (0.27)\n        \u2514\u2500\u2500 [0.30]\n            \u251c\u2500\u2500 'f' (0.11)\n            \u2514\u2500\u2500 'r' (0.19)"
+}

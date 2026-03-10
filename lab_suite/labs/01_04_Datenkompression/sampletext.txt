@@ -1,60 +1,118 @@
-#!/usr/bin/env python3
-"""
-Matplotlib-Demo: Sinussignal erzeugen und anzeigen.
+*******************************************************************************
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   * 
+---------------------T H E   L E G E N D   O F   Z E L D A--------------------- 
+ *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   * 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*******************************************************************************
 
-Dieses Skript zeigt den typischen Ablauf:
-  1. Signalparameter am Anfang definieren (gut lesbar für Änderungen)
-  2. Zeitachse und Sinussignal mit NumPy erzeugen
-  3. Mit Matplotlib in einem Fenster plotten
 
-Ausführen (aus lab_suite):  python labs/01_01_Signale_basics/matplotlib-demo.py
-"""
-from __future__ import annotations
+       A Comprehensive FAQ/Walkthrough for The Legend of Zelda on the NES
 
-import numpy as np
-import matplotlib.pyplot as plt
+                                                 ------------------------------
+                                                | By Colin Moriarty (CMoriarty)
+                                                | E-Mail:   cmoriarty311@cs.com
+                                                | Date:         August 08, 2002
+                                                | Version:                FINAL
+                                                 ------------------------------
 
-# =============================================================================
-# Signalparameter – hier anpassen (für Studierende gut sichtbar)
-# =============================================================================
+-------------------------------------------------------------------------------
+NOTE: To thank, right away, Astro Blue and Shdwrlm3 for allowing me to use two 
+parts of their Zelda: OoS/OoA FAQ - the Triforce section header and their 
+dungeon layout/grid system. Thanks to you both, and make sure to check out 
+their great FAQs as well!
+-------------------------------------------------------------------------------
 
-# Frequenz des Sinus in Hz (wie oft pro Sekunde eine volle Schwingung)
-FREQUENCY_HZ = 2.0
+This FAQ, and all 25 other of my FAQ/Walkthroughs, are now dedicated to the 
+over 6,000 innocent people killed in the World Trade Center and Pentagon 
+terrorist attacks in New York City, New York, and Washington, D.C., on 
+September 11, 2001. To all of the innocent working people, and FDNY Firemen, as 
+well as other emergency workers, you will always be remembered. We won't stop 
+until we bring these criminals to justice, your deaths were NOT IN VAIN! God 
+Bless America, death to all terrorists of all races everywhere.
 
-# Amplitude (maximale Auslenkung des Signals, Einheit z. B. Volt oder normiert)
-AMPLITUDE = 1.0
+           ------------------------------------------------------                 
+        -> http://www.gamefaqs.com/features/recognition/4280.html <-
+           ------------------------------------------------------
 
-# Abtastrate in Hz (wie viele Werte pro Sekunde wir aufnehmen)
-# Sollte mindestens doppelt so groß wie FREQUENCY_HZ sein (Abtasttheorem)
-SAMPLE_RATE_HZ = 100.0
+PLEASE NOTE: This document was created using Microsoft Word with a 7" width, 
+and is best viewed using either your browser (preferably MSIE 5.0 or higher), 
+and a screen setting of 800x600 pixels or more. If the guide seems jumbled up 
+and not quite right looking, it's not the guide, but your screen and computer 
+settings. If you do experience this problem, you probably have your screen 
+settings on 640x480 pixels or less, which is rare but hey, it could be you. 
+Sorry about whatever problems this may cause.
 
-# Dauer des Signals in Sekunden
-DURATION_S = 2.0
+NOTE - This FAQ/Walkthrough covers the first quest of this game ONLY. If you 
+need a second quest FAQ/Walkthrough, some of the others (Devin Morgan's and Dan 
+Simpson's, amongst others) have them for you. Sorry for any inconvenience this 
+may cause.
 
-# =============================================================================
-# Zeitachse und Sinussignal erzeugen
-# =============================================================================
+IGN.com is now allowed to host all of my FAQs. Although the disclaimer says only 
+GameFAQs can use my FAQs, IGN.com is now a legal host of all of my work.
 
-# Anzahl der Abtastwerte
-num_samples = int(SAMPLE_RATE_HZ * DURATION_S)
+ 
+T A B L E     O F     C O N T E N T S...
+---------     ---     ---------------
 
-# Zeitpunkte: von 0 bis (DURATION_S - 1/SAMPLE_RATE_HZ), gleichmäßig verteilt
-t = np.linspace(0, DURATION_S, num_samples, endpoint=False)
+I.)........... | Legal Disclaimer
+II.).......... | Versions of the Guide
+III.)......... | Introduction
+IV.).......... | Storyline/Plot
+V.)........... | Characters
+VI.).......... | Controls
+VII.)......... | Game Physics and Mechanics (Battles and Movement, et cetera)
+VIII.)........ | The Game Map (goes hand-in-hand with the walkthrough)
+IX.).......... | WALKTHROUGH
+X.)........... | Game Ending (SPOILERS!)
+XI.).......... | Weapons/Items/Accessories (and their locations)
+XII.)......... | Enemies
+XIII.)........ | Bosses
+XIV.)......... | Dungeon Archive
+XV.).......... | Shops
+XVI.)......... | "Old Man" Quotes
+XVII.)........ | General FAQ
+XVIII.)....... | In Closing
+XIX.)......... | About the Author
 
-# Sinussignal:  x(t) = A * sin(2 * pi * f * t)
-# np.sin erwartet Winkel im Bogenmaß; 2*pi*f*t liefert die Phase pro Zeit t
-signal = AMPLITUDE * np.sin(2 * np.pi * FREQUENCY_HZ * t)
 
-# =============================================================================
-# Mit Matplotlib plotten
-# =============================================================================
+   /\                                                                     /\
+  /__\===================================================================/__\
+ /\  /\ I  S E C T I O N   O N E  |  L E G A L   D I S C L A I M E R  I /\  /\
+/__\/__\===============================================================/__\/__\
 
-plt.figure(figsize=(10, 4))
-plt.plot(t, signal, color="C0", linewidth=1.5, label=f"sin, f={FREQUENCY_HZ} Hz")
-plt.xlabel("Zeit (s)")
-plt.ylabel("Amplitude")
-plt.title("Sinussignal (Matplotlib-Demo)")
-plt.grid(True, alpha=0.5)
-plt.legend()
-plt.tight_layout()
-plt.show()
+This guide/FAQ/walkthrough is copyrighted (c) 2002 to Colin Moriarty, and is the 
+intellectual property of Colin Moriarty. This guide/FAQ/walkthrough is only to 
+be found on GameFAQs (http://www.gamefaqs.com). If you are reading and/or found 
+this file ANYWHERE else but GameFAQs, please contact the author, Colin 
+Moriarty, immidiately, at cmoriarty311@cs.com. This guide/FAQ/walkthrough is 
+protected under International Copyright Laws, and it is prohibited to take any 
+piece of this document and reproduce it in anyway without the written consent 
+of the author, Colin Moriarty. Any website or other medium found to have this 
+document without permission will be dealt with to the fullest extent of the 
+law.
+
+Please don't e-mail me and ask to have this document on your webpage. It's too
+frustrating for me to keep track of all of the webpages that have my 
+document(s) on their page, especially the smaller, domain-less fan sites. 
+GameFAQs (www.gamefaqs.com) is the only, and I repeat, THE ONLY webpage allowed 
+to have this document on his website, GameFAQs.com. CJayC, owner and operator 
+of GameFAQs is the only person allowed to use this document on a webpage, so 
+please, I repeat once more, no e-mails regarding using this document on your 
+webpage. If you do e-mail me about it, your e-mail will be promptly erased and 
+ignored.
+
+You ARE allowed to download this off of GameFAQs and keep it on your computer's
+harddrive for personal use, as long as the document is not edited or otherwise
+distributed except for personal use. You can even print out the entire FAQ or
+portions therein to share with a friend who also needs help in the game. Just
+please don't distribute it as your own, sell it for profit, et cetera. Well, 
+you guys get the idea.
+
+Oh, and if you decide to steal stuff from my FAQ, and you steal the "Triforce 
+header" or dungeon layout/grid system, they aren't mine, they are being used 
+under permission, as it says at the top of the FAQ, from Astro Blue and 
+Shdwrlm3, so you'll have to deal with all three of us if you decide to be 
+stupid and steal that stuff.
+
+Onward.
