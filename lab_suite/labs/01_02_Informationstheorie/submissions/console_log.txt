@@ -1,0 +1,77 @@
+Analyze the file:  C:\_Git\KT-course\lab_suite\labs\01_02_Informationstheorie\sampletext.txt
+
+-----File Contents:---------------------------------------------------
+Die Liste von BrÃ¼ckenbauten mit Beteiligung von George S. Morison fÃ¼hrt chronologisch die BrÃ¼ckenbauprojekte auf, an denen George S. Morison (1842â€“1903) maÃŸgeblich in seiner circa 35-jÃ¤hrigen Karriere beteiligt war. Er realisierte Ã¼ber zwanzig groÃŸe EisenbahnbrÃ¼cken, unter anderem mit der Ã¼ber drei Kilometer langen Cairo Rail Bridge (1890) die damals lÃ¤ngste Stahl-FachwerkbrÃ¼cke der Welt und mit der Frisco Bridge (1892) die AuslegerbrÃ¼cke mit der damals lÃ¤ngsten Spannweite in Nordamerika. In seinen letzten Lebensjahren gewann er 1898 in Zusammenarbeit mit dem Architekten Edward Pearce Casey noch eine Ausschreibung mit dem Entwurf einer StraÃŸenbrÃ¼cke Ã¼ber das Tal des Rock Creek in Washington, D.C., die aber erst 1907 fertiggestellt wurde. Die Taft Bridge war zum Zeitpunkt ihrer Errichtung die grÃ¶ÃŸte unverstÃ¤rkte Beton-BogenbrÃ¼cke der Welt. Neben der Frisco Bridge und Taft Bridge sind nur noch zwei weitere BrÃ¼cken von Morison in ihrer ursprÃ¼nglichen AusfÃ¼hrung erhalten
+Number of characters: 1006
+Character Dictionary: {'D': 3, 'i': 65, 'e': 121, ' ': 139, 'L': 2, 's': 30, 't': 45, 'v': 4, 'o': 27, 'n': 68, 'B': 11, 'r': 83, 'Ã': 23, '¼': 14, 'c': 24, 'k': 16, 'b': 18, 'a': 40, 'u': 21, 'm': 17, 'l': 22, 'g': 29, 'G': 2, 'S': 5, '.': 8, 'M': 3, 'f': 7, 'h': 20, 'd': 32, 'p': 4, 'j': 3, ',': 4, '(': 3, '1': 6, '8': 5, '4': 1, '2': 2, 'â': 1, '€': 1, '“': 1, '9': 5, '0': 3, '3': 2, ')': 3, 'Ÿ': 4, '5': 1, '-': 3, '¤': 4, 'K': 2, 'w': 11, 'E': 5, 'z': 5, 'C': 4, 'R': 2, 'F': 3, 'W': 3, 'A': 4, 'N': 2, 'I': 1, 'Z': 2, 'P': 1, 'y': 1, 'T': 3, '7': 1, '¶': 1}
+
+-------Table of characters:----------------
+       | cnt=139    p=0.138   H=2.855 bit/char  H_av=0.395 bit/char
+ e     | cnt=121    p=0.120   H=3.056 bit/char  H_av=0.368 bit/char
+ r     | cnt= 83    p=0.083   H=3.599 bit/char  H_av=0.297 bit/char
+ n     | cnt= 68    p=0.068   H=3.887 bit/char  H_av=0.263 bit/char
+ i     | cnt= 65    p=0.065   H=3.952 bit/char  H_av=0.255 bit/char
+ t     | cnt= 45    p=0.045   H=4.483 bit/char  H_av=0.201 bit/char
+ a     | cnt= 40    p=0.040   H=4.652 bit/char  H_av=0.185 bit/char
+ d     | cnt= 32    p=0.032   H=4.974 bit/char  H_av=0.158 bit/char
+ s     | cnt= 30    p=0.030   H=5.068 bit/char  H_av=0.151 bit/char
+ g     | cnt= 29    p=0.029   H=5.116 bit/char  H_av=0.147 bit/char
+ o     | cnt= 27    p=0.027   H=5.220 bit/char  H_av=0.140 bit/char
+ c     | cnt= 24    p=0.024   H=5.389 bit/char  H_av=0.129 bit/char
+ Ã     | cnt= 23    p=0.023   H=5.451 bit/char  H_av=0.125 bit/char
+ l     | cnt= 22    p=0.022   H=5.515 bit/char  H_av=0.121 bit/char
+ u     | cnt= 21    p=0.021   H=5.582 bit/char  H_av=0.117 bit/char
+ h     | cnt= 20    p=0.020   H=5.652 bit/char  H_av=0.112 bit/char
+ b     | cnt= 18    p=0.018   H=5.804 bit/char  H_av=0.104 bit/char
+ m     | cnt= 17    p=0.017   H=5.887 bit/char  H_av=0.099 bit/char
+ k     | cnt= 16    p=0.016   H=5.974 bit/char  H_av=0.095 bit/char
+ ¼     | cnt= 14    p=0.014   H=6.167 bit/char  H_av=0.086 bit/char
+ B     | cnt= 11    p=0.011   H=6.515 bit/char  H_av=0.071 bit/char
+ w     | cnt= 11    p=0.011   H=6.515 bit/char  H_av=0.071 bit/char
+ .     | cnt=  8    p=0.008   H=6.974 bit/char  H_av=0.055 bit/char
+ f     | cnt=  7    p=0.007   H=7.167 bit/char  H_av=0.050 bit/char
+ 1     | cnt=  6    p=0.006   H=7.389 bit/char  H_av=0.044 bit/char
+ S     | cnt=  5    p=0.005   H=7.652 bit/char  H_av=0.038 bit/char
+ 8     | cnt=  5    p=0.005   H=7.652 bit/char  H_av=0.038 bit/char
+ 9     | cnt=  5    p=0.005   H=7.652 bit/char  H_av=0.038 bit/char
+ E     | cnt=  5    p=0.005   H=7.652 bit/char  H_av=0.038 bit/char
+ z     | cnt=  5    p=0.005   H=7.652 bit/char  H_av=0.038 bit/char
+ v     | cnt=  4    p=0.004   H=7.974 bit/char  H_av=0.032 bit/char
+ p     | cnt=  4    p=0.004   H=7.974 bit/char  H_av=0.032 bit/char
+ ,     | cnt=  4    p=0.004   H=7.974 bit/char  H_av=0.032 bit/char
+ Ÿ     | cnt=  4    p=0.004   H=7.974 bit/char  H_av=0.032 bit/char
+ ¤     | cnt=  4    p=0.004   H=7.974 bit/char  H_av=0.032 bit/char
+ C     | cnt=  4    p=0.004   H=7.974 bit/char  H_av=0.032 bit/char
+ A     | cnt=  4    p=0.004   H=7.974 bit/char  H_av=0.032 bit/char
+ D     | cnt=  3    p=0.003   H=8.389 bit/char  H_av=0.025 bit/char
+ M     | cnt=  3    p=0.003   H=8.389 bit/char  H_av=0.025 bit/char
+ j     | cnt=  3    p=0.003   H=8.389 bit/char  H_av=0.025 bit/char
+ (     | cnt=  3    p=0.003   H=8.389 bit/char  H_av=0.025 bit/char
+ 0     | cnt=  3    p=0.003   H=8.389 bit/char  H_av=0.025 bit/char
+ )     | cnt=  3    p=0.003   H=8.389 bit/char  H_av=0.025 bit/char
+ -     | cnt=  3    p=0.003   H=8.389 bit/char  H_av=0.025 bit/char
+ F     | cnt=  3    p=0.003   H=8.389 bit/char  H_av=0.025 bit/char
+ W     | cnt=  3    p=0.003   H=8.389 bit/char  H_av=0.025 bit/char
+ T     | cnt=  3    p=0.003   H=8.389 bit/char  H_av=0.025 bit/char
+ L     | cnt=  2    p=0.002   H=8.974 bit/char  H_av=0.018 bit/char
+ G     | cnt=  2    p=0.002   H=8.974 bit/char  H_av=0.018 bit/char
+ 2     | cnt=  2    p=0.002   H=8.974 bit/char  H_av=0.018 bit/char
+ 3     | cnt=  2    p=0.002   H=8.974 bit/char  H_av=0.018 bit/char
+ K     | cnt=  2    p=0.002   H=8.974 bit/char  H_av=0.018 bit/char
+ R     | cnt=  2    p=0.002   H=8.974 bit/char  H_av=0.018 bit/char
+ N     | cnt=  2    p=0.002   H=8.974 bit/char  H_av=0.018 bit/char
+ Z     | cnt=  2    p=0.002   H=8.974 bit/char  H_av=0.018 bit/char
+ 4     | cnt=  1    p=0.001   H=9.974 bit/char  H_av=0.010 bit/char
+ â     | cnt=  1    p=0.001   H=9.974 bit/char  H_av=0.010 bit/char
+ €     | cnt=  1    p=0.001   H=9.974 bit/char  H_av=0.010 bit/char
+ “     | cnt=  1    p=0.001   H=9.974 bit/char  H_av=0.010 bit/char
+ 5     | cnt=  1    p=0.001   H=9.974 bit/char  H_av=0.010 bit/char
+ I     | cnt=  1    p=0.001   H=9.974 bit/char  H_av=0.010 bit/char
+ P     | cnt=  1    p=0.001   H=9.974 bit/char  H_av=0.010 bit/char
+ y     | cnt=  1    p=0.001   H=9.974 bit/char  H_av=0.010 bit/char
+ 7     | cnt=  1    p=0.001   H=9.974 bit/char  H_av=0.010 bit/char
+ ¶     | cnt=  1    p=0.001   H=9.974 bit/char  H_av=0.010 bit/char
+-------------------------------------------
+
+Average Entropy H = 4.743 bit/char
+Total Entropy of 1006 characters H=4770.96 bit = 597.00 byte
